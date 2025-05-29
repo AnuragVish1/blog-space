@@ -1,7 +1,18 @@
+import NavBar from "@/components/navbar"
+import Posts from "@/components/posts"
+
 function App() {
   return (
     <>
-      <h1 className=" text-amber-600">Hello</h1>
+      <NavBar/>
+      {/* all users posts */}
+      <div className="w-full h-full mt-20 flex justify-center items-center flex-col gap-15">
+        <Posts />
+        <Posts />
+        <Posts />
+        <Posts />
+        <Posts />
+      </div>
     </>
   )
 }
